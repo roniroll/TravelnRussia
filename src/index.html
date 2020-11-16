@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путешествия по России</title>
-    <link rel="stylesheet" href="./Styles/normalize.css">
-    <link rel="stylesheet" href="./Styles/styles.css">
-    <!-- Отлично! правильно оформлен head -->
  </head>
   <body class="main">
         <header class="header">
-            <img class="header__logo" src="images/logo.svg" alt="Логотип России">
+            <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Логотип России">
            <div class="header__languages">
             <a href="#" class="header__lang header__lang_selected">Ru</a>
             <a href="#" class="header__lang">En</a>
@@ -18,11 +15,8 @@
         </header>
         <div class="lead">
             <h1 class="lead__title">Путешествия по России</h1>
-            <!-- Отлично! правильно выделен заголовок страницы и обозначен тегом h1 -->
             <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-            <!-- Отлично! подзаголовок сделан с помощью параграфа -->
-
-            <img class="lead__image" src="images/polka.jpg" alt="Нижняя полка у окна">
+            <img class="lead__image" src="<%=require('./images/polka.jpg')%>" alt="Нижняя полка у окна">
             <p class="lead__caption">ваша полка — верхняя</p>
         </div>
         <div class="intro">
@@ -40,18 +34,18 @@
             </ul>
         </div>
         <div class="photo-grid">
-            <img class="photo-grid__item" src="images/train.jpg" alt="Поезд">
-            <img class="photo-grid__item" src="images/atharva-tulsi.jpg" alt="Горы">
-            <img class="photo-grid__item" src="images/tuman.jpg" alt="Пес в тумане">
-            <img class="photo-grid__item" src="images/sochi.jpg" alt="Сочи">
-            <img class="photo-grid__item" src="images/arisa.jpg" alt="Машина на льду">
-            <img class="photo-grid__item" src="images/baikal.jpg" alt="Байкал">
-            <img class="photo-grid__item" src="images/elbrus.jpg" alt="Эльбрус">
-            <img class="photo-grid__item" src="images/kondratiev.jpg" alt="Станислав Кондратьев">
-            <img class="photo-grid__item" src="images/kamchatka-1.jpg" alt="Камчатка">
-            <img class="photo-grid__item" src="images/kamchatka-2.jpg" alt="Камчатка">
-            <img class="photo-grid__item" src="images/baikal-2.jpg" alt="Байкал">
-            <img class="photo-grid__item" src="images/ergaki.jpg" alt="Ергаки">
+            <img class="photo-grid__item" src="<%=require('./images/train.jpg')%>" alt="Поезд">
+            <img class="photo-grid__item" src="<%=require('./images/atharva-tulsi.jpg')%>" alt="Горы">
+            <img class="photo-grid__item" src="<%=require('./images/tuman.jpg')%>" alt="Пес в тумане">
+            <img class="photo-grid__item" src="<%=require('./images/sochi.jpg')%>" alt="Сочи">
+            <img class="photo-grid__item" src="<%=require('./images/arisa.jpg')%>" alt="Машина на льду">
+            <img class="photo-grid__item" src="<%=require('./images/baikal.jpg')%>" alt="Байкал">
+            <img class="photo-grid__item" src="<%=require('./images/elbrus.jpg')%>" alt="Эльбрус">
+            <img class="photo-grid__item" src="<%=require('./images/kondratiev.jpg')%>" alt="Станислав Кондратьев">
+            <img class="photo-grid__item" src="<%=require('./images/kamchatka-1.jpg')%>" alt="Камчатка">
+            <img class="photo-grid__item" src="<%=require('./images/kamchatka-2.jpg')%>" alt="Камчатка">
+            <img class="photo-grid__item" src="<%=require('./images/baikal-2.jpg')%>" alt="Байкал">
+            <img class="photo-grid__item" src="<%=require('./images/ergaki.jpg')%>" alt="Ергаки">
         </div>
         <div class="places">
             <div class="place">
@@ -63,7 +57,7 @@
                         </div>
                 </div>
                 <div class="place__body">
-                 <img class="place__image" src="images/kosa.jpg" alt="Куршская коса">
+                 <img class="place__image" src="<%=require('./images/kosa.jpg')%>" alt="Куршская коса">
                  <div class="place__paragraphs">
                     <p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона на краю российского анклава.</p>
                     <p class="place__paragraph">На этом Калининградская область не заканчивается. Для путешественника и исследователя там же по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
@@ -79,7 +73,7 @@
              </div>
              </div>
                 <div class="place__body">
-                 <img class="place__image" src="images/kolsky.jpg" alt="Кольский">
+                 <img class="place__image" src="<%=require('./images/kolsky.jpg')%>" alt="Кольский">
                  <div class="place__paragraphs">
                  <p class="place__paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
                  <p class="place__paragraph">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
@@ -95,7 +89,7 @@
              </div>
              </div>
                 <div class="place__body">
-                 <img class="place__image" src="images/altai.jpg" alt="Алтай">
+                 <img class="place__image" src="<%=require('./images/altai.jpg')%>" alt="Алтай">
                  <div class="place__paragraphs">
                  <p class="place__paragraph">Алтай — одно из красивейших мест в России. В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
                  <p class="place__paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
@@ -111,7 +105,7 @@
              </div>
              </div>
                 <div class="place__body">
-                 <img class="place__image" src="images/winter-baikal.jpg" alt="Зимний Байкал">
+                 <img class="place__image" src="<%=require('./images/winter-baikal.jpg')%>" alt="Зимний Байкал">
                  <div class="place__paragraphs">
                  <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.</p>
                  <p class="place__paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
@@ -127,7 +121,7 @@
              </div>
              </div>
                 <div class="place__body">
-                 <img class="place__image" src="images/karelia.jpg" alt="Карелия">
+                 <img class="place__image" src="<%=require('./images/karelia.jpg')%>" alt="Карелия">
                  <div class="place__paragraphs">
                  <p class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
                  </div>
@@ -142,7 +136,6 @@
                 <img class="video__icon-play" src="images/icon_play.svg" alt="Иконка возпроизвести">
                 <p class="video__duration">6:30</p>
                 <p class="video__title">Colors of Kamchatka</p>
-                <!-- Можно лучше: используйте тег заголовка для названия видео -->
                 <p class="video__subtitle">Director: Pavel Karykhalin</p>
             </a>
             <a href="https://vimeo.com/290675450" target="_blank" class="video__item video__item_observ">
@@ -158,18 +151,17 @@
             <p class="comments__content-subtitle">Природа и люди вдохновили их работы, удостоенные наград на международных конкурсах</p>
             <div class="comments__container">
               <div class="comments__item">
-                <img class="comments__image" src="images/lyagushkin.jpg" alt="Виктор Лягушкин">
+                <img class="comments__image" src="<%=require('./images/lyagushkin.jpg')%>" alt="Виктор Лягушкин">
                 <blockquote class="comments__quote">«Если вам кажется, что в России ничего не происходит, то просто выгляньте “наружу”…»</blockquote>
-                <!-- Отлично! Вы исползуете теги blockquote и cite  -->
                 <cite class="comments__author">Виктор Лягушкин</cite>
               </div>
               <div class="comments__item">
-                  <img class="comments__image" src="images/hafizov.jpg" alt="Иван Хафизов">
+                  <img class="comments__image" src="<%=require('./images/hafizov.jpg')%>" alt="Иван Хафизов">
                   <blockquote class="comments__quote">«Если в город едут туристы — неважно за чем они туда едут: за шамбалой или фрески Рублева искать, или на родину Тарковского — туристы обеспечивают любой город молодёжью, рабочими местами и в конечном счёте наполняют его жизнью.»</blockquote>
                   <cite class="comments__author">Иван Хафизов</cite>
             </div>
             <div class="comments__item">
-                  <img class="comments__image" src="images/maksimshin.jpg" alt="Сергей Максимишин">
+                  <img class="comments__image" src="<%=require('./images/maksimshin.jpg')%>" alt="Сергей Максимишин">
                   <blockquote class="comments__quote">«Ты приезжаешь, и люди рассказывают тебе, как им плохо. А когда ты покажешь, как им плохо, то ты сволочь и всё очернил.»</blockquote>
                   <cite class="comments__author">Сергей Максимишин</cite>
             </div>
@@ -189,71 +181,9 @@
                 <li class="footer__link"><a class="footer__text" href="https://travel.yandex.ru/" target="_blank">Путешествия</a></li>
              </ul>
             </nav>
-            <!-- Отлично! Вы используете список nav для навигации -->
             <p class="footer__copyright">
-                &copy; 2019. Недоспасов Никита
+                &copy; 2020. Недоспасов Никита
             </p>
-            <!-- Отлично! Вы используете html мнемоники -->
         </footer>
  </body>
 </html>
-
-
-
-
-<!-- 
-В целом по работе: 
-
-Отлично! Понравилось в работе:
-
-- Понятный, хорошо структурированный код
-- Страница проходит валидацию 
-- Для всех изображений прописан alt
-- Стили и картинки в самостоятельных папках
-- Для логотипа и иконок использован векторный формат изображений
-- Контент центрируется на большом экране
-- Для интерактивных элементов используется transition
-- Файловая система и классы названы по БЭМ
-- Использованы семантические теги и списки
-- Для подзаголовков использованы параграфы
-- Для переиспользования в проекте есть блоки
-- Размечены все макеты
-- Все брейкпоинты внешне соответствуют макетам
-- Учтены изменения шрифтов и размеров блоков
-- Аккуратное выравнивание блоков на странице
-
-
-Нужно исправить:
-
-- (+) Не стоит вкладывать папки с блоками друг в друга. поместите все папки блоков на один уровень в blocks/ 
-Вынесите стилизацию .place на один уровень с остальными блоками
-
-- (+) Между брейкпоинтами 375 и 768 деформируется в пропорциях изображение .place__image
-
-Можно улучшить:
-
-
-- Комментарии в разметке
-
-- Поправьте отступы на странице
-Вы установили высоту строки у заголовка и координат как в макете и задали отступ тоже как в макете, 
-проблема в том что все эти программы (Figma/Avocode/Zeplin) не учитывают высоту строки т.е. они 
-показывают отступ от символа до символа, а браузер отступ делает от высоты строки до высоты строки. 
-Т.е. это не бриф в котором указаны размеры, они могут css быть другие, включая pixel perfect можно 
-подогнать
-https://chrome.google.com/webstore/detail/perfectpixel-by-elldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=ru
-
-- в навигации в footer на мобильных макетах (320 и 375) поправьте расстояние между ссылками. 
-браузер и Figma по-разному считают вертикальное расстояние между текстовыми элементами, поэтому проста цифра из макета не совпадает
-наложите макет на страницу и сверьте расстояние
-
-- для страницы добавьте min-width: 320px;
-
-
-Для получения зачета исправьте комментарии "Надо исправить"
-
-
-_Полезные материалы:_
-- Соглашение по именованию БЭМ https://ru.bem.info/methodology/naming-convention/
-- Часто используемые слова в классах https://github.com/yoksel/common-words
- -->

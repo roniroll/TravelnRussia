@@ -2,7 +2,7 @@
 @import url(../places/__url-heading/place__url-heading.css);
 @import url(../places/__title/place__title.css);
 @import url(../places/__place__links/place__links.css);
-@import url(../places/__place/place.css);
+/* @import url(../places/__place/place.css); */
 @import url(.//__paragraphs/place__paragraphs.css);
 @import url(../places/__paragraph/place__paragraph.css);
 @import url(../places/__links/place__links.css);

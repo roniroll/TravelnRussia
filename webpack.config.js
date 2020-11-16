@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const webpack = require('webpack');
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/js/index.js'),
@@ -22,7 +23,7 @@ module.exports = {
             {
                 test: /\.css$/i,
                     use: [
-                        ('style-loader' : MiniCssExtractPlugin.loader),
+                        (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
                         {
                          loader: 'css-loader',
                          options: {
