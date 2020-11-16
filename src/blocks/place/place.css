@@ -1,0 +1,9 @@
+.place {
+    max-width: 984px; 
+    margin-bottom: 83px;
+    width: 100%;
+}
+
+.place:last-of-type {
+    margin-bottom: 0;
+}

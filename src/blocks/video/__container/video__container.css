@@ -1,0 +1,27 @@
+.video__container {
+    max-width: 1184px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+    .video__container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .video__container{
+        flex-direction: row;
+        padding: 0 48px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .video__container{
+        padding: 0;
+    }
+}
+
+

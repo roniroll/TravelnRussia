@@ -1,0 +1,19 @@
+.main {
+    background-color: #2A2C2F;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    display: block;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+

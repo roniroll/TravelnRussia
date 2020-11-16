@@ -1,0 +1,14 @@
+.video__duration {
+    font-family: "Inter", Arial, sans-serif;
+    max-width: 44px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: auto;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.3em;
+    font-family: 'Inter';
+    color: #FFFFFF;
+    z-index: 3;
+}
+

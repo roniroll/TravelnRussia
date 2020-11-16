@@ -1,0 +1,27 @@
+@import url(../video/__title/video__title.css);
+@import url(../video/__subtitle/video__subtitle.css);
+@import url(../../blocks/video/__item/video__item.css);
+@import url(../video/__item/_item/video__item_kamchatka.css);
+@import url(../video/__item/_item/video__item_observ.css);
+@import url(../video/__icon-play/video__icon-play.css);
+@import url(../video/__duration/video__duration.css);
+@import url(../video/__content-title/content-title.css);
+@import url(../video/__content-subtitle/content-subtitle.css);
+@import url(../video/__container/video__container.css);
+
+.video {
+    max-width: 1184px;
+    margin: 102px auto 0;
+}
+
+@media screen and (max-width: 767px){
+    .video{
+        padding: 0 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .video{
+        padding: 0 24px;
+    }
+}
